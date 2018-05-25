@@ -1,0 +1,31 @@
+
+// -----------------------------------------------------------------------------
+// This file contains only Sass mixins and functions
+// -----------------------------------------------------------------------------
+
+/// Allow to add properties to your element on hover, active, focus
+@mixin on-event($self: false) {
+    @if $self {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    } @else {
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+}
+
+
+/// Allow to add styles on your placeholders
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content }
+         &:-ms-input-placeholder { @content }
+             &::-moz-placeholder { @content }
+              &:-moz-placeholder { @content }
+}

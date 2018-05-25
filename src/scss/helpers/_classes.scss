@@ -1,0 +1,13 @@
+
+// -----------------------------------------------------------------------------
+// This file contains only help classes that improve your workflow
+// e.g. clearfix, aligns, etc...
+// ----------------------------------------------------------------------------- 
+
+%clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

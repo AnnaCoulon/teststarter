@@ -1,0 +1,30 @@
+
+// -----------------------------------------------------------------------------
+// This file contains a soft reset of html tags
+// -----------------------------------------------------------------------------
+
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    box-sizing: border-box;
+}
+
+html,body,div,img,ul,ol,li,em,strong,table,tr,th,td,hr,a,h1,h2,h3,h4,h5,h6,input,label,p,span,figure,svg, textarea {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: normal;
+	font-style: normal;
+}
+
+img,a,input,textarea,table,tr,th,td,hr,button,figure {
+	border: none;
+	outline: 0;
+	text-decoration: none;
+}
+
+a {
+	&:before, &:after {
+		text-decoration: none;
+	}
+}
